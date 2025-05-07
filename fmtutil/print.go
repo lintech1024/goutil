@@ -15,7 +15,7 @@ func PrintJSON(v any) (err error) {
 }
 
 func jsonMarshal(v any) (s string, err error) {
-	b, err := json.Marshal(v)
+	b, err := json.MarshalIndent(v, "", "  ")
 	if err != nil {
 		return "", err
 	}
