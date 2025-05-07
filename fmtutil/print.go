@@ -1,4 +1,4 @@
-package fmt
+package fmtutil
 
 import (
 	"encoding/json"
